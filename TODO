@@ -1,0 +1,2 @@
+- Create a better page caching with expiration/purge function
+- Use logging instead of 
