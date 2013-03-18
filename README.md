@@ -37,3 +37,9 @@ Quickstart
 5. Use it with pip
 
         pip install -U --index-url=http://localhost:8080/simple/ --timeout=600 django sqlalchemy redis
+
+6. Add to your ~/.pip/pip.conf
+
+        [global]
+        timeout = 600
+        index-url = http://server:8080/simple/
