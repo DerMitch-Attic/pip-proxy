@@ -16,29 +16,33 @@ Why should I use it?
 Quickstart
 ----------
 
-1. Create a virtualenv
+1. Install development headers
+
+        sudo apt-get install python-dev libevent-dev
+
+2. Create a virtualenv
 
         virtualenv mypip
         cd mypip
         . bin/activate
  
-2. Clone this repository
+3. Clone this repository
 
         git clone https://github.com/DerMitch/pip-proxy.git
         cd pip-proxy
         pip install -r requirements.txt
 
-3. Edit configuration (config.ini)
+4. Edit configuration (config.ini)
 
-4. Run!
+5. Run!
 
         python pip-proxy.py
 
-5. Use it with pip
+6. Use it with pip
 
         pip install -U --index-url=http://localhost:8080/simple/ --timeout=600 django sqlalchemy redis
 
-6. Add to your ~/.pip/pip.conf
+7. Add to your ~/.pip/pip.conf
 
         [global]
         timeout = 600
