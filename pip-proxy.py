@@ -104,6 +104,9 @@ class CacheHandler(web.RequestHandler):
             gevent.spawn(downloader, self, getconfig('pypi_url') + url, filename)
         else:
             # Just proxy anything back and rewrite returned PyPi urls
+            if not os.path.isdir(getconfig('page_cache')):
+                os.makedirs(getconfig('page_cache'))
+
             self.cache_file = os.path.join(
                 getconfig('page_cache'),
                 md5(url.encode("UTF-8")).hexdigest()
