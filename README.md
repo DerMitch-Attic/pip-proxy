@@ -1,6 +1,8 @@
 pip-proxy
 =========
 
+**This project is abandoned. Please don't use it - there are many better alternatives**
+
 A simple caching proxy server for pip. Proxies and rewrites any requests
 to PyPi and caches them. It never redirects clients to PyPi like other
 solutions, so your pip clients don't need a direct internet connection.
